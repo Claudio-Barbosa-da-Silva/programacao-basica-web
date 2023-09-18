@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+body{
+	background-color: #dddddd;
+	color: rbga(0,0,0,1);
+}
+
+div#interface{
+	width: 900px;
+	background-color: #ffffff;
+	margin: 10px auto 0px auto;
+	box-shadow: 0px 0px 10px rbga(0,0,0,.5);
+	padding: 10px;
+}
+
+nav#menu{
+	display: block;
+	background-color: green;	
+}
+
+nav#menu h1{
+	display: none;
+}
+
+nav#menu ul {
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -10px;
+	left: 600px;
+}
+
+nav#menu li {
+	display: inline-block;
+	background-color: #dddddd;
+	padding: 10px;
+	margin: 2px;
+	transition: background-color 1s;
+}
+
+nav#menu li:hover {
+	background-color: #606060;	
+}
+
+nav#menu a {
+	color: #000000;
+	text-decoration: none;
+}
+
+nav#menu a:hover {
+	color: #909090;
+	text-decoration: underline;
+}
+
+.dropdown-menu-aula{
+	position: absolute;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	display: none;
+}
+
+.dropdown-menu-aula a{
+	display: block;
+	color: black;
+	padding: 5px;
+	text-align: left;	
+}
+
+.dropdown:hover .dropdown-menu-aula{
+	display: block;
+	min-width: 220px;
+	background-color: #f1f1f1
+}
+
+.dropdown-menu-atividade{
+	position: absolute;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	display: none;	
+}
+
+.dropdown-menu-atividade a {
+	display: block;
+	color: black;
+	padding: 5px;
+	border-bottom: 1px solid rgba(0 0 0 .5);
+	text-align: left;
+}
+
+.dropdown:hover .dropdown-menu-atividade{
+	display: block;
+	min-width: 320px;
+	background-color: #f1f1f1
+}
+
+/*Formatação de imagens com legenda*/
+
+figure.legenda-foto{
+	position: relative;
+	
+}
+
+figure.legenda-foto img{
+	width: 40%;
+	height: 40%;
+}
+
+figure.legenda-foto figcaption{
+	opacity: 0;
+	position: absolute;
+	top: 18px;
+	background-color: rgba(0,0,0,.4);
+	color: yellow;
+	width: 40%;
+	height: 88%;
+	padding: 99px;
+	box-sizing: border-box;	
+	transition: opacity 2s;
+}
+
+figure.legenda-foto:hover figcaption{
+	opacity: 1;
+}
+
+footer#rodape {
+	clear: both;
+	border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+	text-align: center;	
+}
