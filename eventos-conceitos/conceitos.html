@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principais Conceitos da Tag HEAD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Principais Conceitos da Tag HEAD</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li class="active"><a href="eventos.html">Eventos</a></li>
+                <li><a href="formularios.html">Inscrição</a></li>
+                <li><a href="sobre.html">Sobre a Organização</a></li>
+                <li><a href="conceitos.html">Conceitos da Tag HEAD</a></li>      
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="conteudo">
+            <h2>Perguntas e Respostas</h2>
+            
+            <h3>1 - Qual a utilidade da tag HEAD e quais os elementos HTML que podem ser usados dentro do head da página?</h3>
+            <p>A tag HEAD é utilizada para conter informações sobre o documento HTML, como metadados, links para arquivos externos, definições de estilo, entre outros. Dentro da tag HEAD, é comum usar elementos como &lt;meta&gt;, &lt;link&gt;, &lt;title&gt;, &lt;base&gt;, &lt;style&gt;, &lt;script&gt; e outros para fornecer informações adicionais e configurar o documento.</p>
+            
+            <h3>2 - Explique a utilidade e o funcionamento das tags meta, title e base. Dê um exemplo da utilização de cada uma delas.</h3>
+            <p>A tag <code>&lt;meta&gt;</code> é utilizada para fornecer metadados sobre o documento, como a codificação de caracteres, autor, descrição, entre outros. Por exemplo:</p>
+            <pre>
+                <code>
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="author" content="João Silva"&gt;
+&lt;meta name="description" content="Um exemplo de página HTML"&gt;
+                </code>
+            </pre>
+
+            <p>A tag <code>&lt;title&gt;</code> define o título do documento que aparece na barra de título do navegador. Por exemplo:</p>
+            <pre>
+                <code>
+&lt;title&gt;Título da Página&lt;/title&gt;
+                </code>
+            </pre>
+
+            <p>A tag <code>&lt;base&gt;</code> especifica o URL base para todos os links na página. Ela é usada em conjunto com a tag &lt;a&gt; para definir URLs relativos. Por exemplo:</p>
+            <pre>
+                <code>
+&lt;base href="https://www.exemplo.com/"&gt;
+&lt;a href="pagina.html"&gt;Link&lt;/a&gt;
+                </code>
+            </pre>
+
+            <h3>3 - O que é um charset? Qual a sua utilidade?</h3>
+            <p>Charset é um conjunto de caracteres ou uma codificação de caracteres que define como os caracteres serão representados no documento. Sua utilidade está em garantir que os caracteres sejam exibidos corretamente no navegador, independentemente do idioma ou símbolos utilizados.</p>
+
+            <h3>4 - Caso o charset não seja definido na página qual será utilizado por padrão?</h3>
+            <p>Por padrão, se o charset não for definido na página, o navegador irá usar o charset padrão do sistema ou uma configuração predefinida.</p>
+
+            <h3>5 - Fale sobre os charsets UTF-8, ASCII, ANSI e ISO-8859-1.</h3>
+            <p>
+                <strong>UTF-8:</strong> É um conjunto de caracteres Unicode que suporta a maioria dos idiomas do mundo. É amplamente utilizado na web e é recomendado por sua capacidade de representar uma ampla gama de caracteres.
+                <br><br>
+                <strong>ASCII:</strong> É um conjunto de caracteres que representa os caracteres alfanuméricos básicos em inglês, usando 7 bits. Não suporta caracteres acentuados ou símbolos de outros idiomas.
+                <br><br>
+                <strong>ANSI:</strong> É um conjunto de caracteres que depende da página de código do sistema operacional. Pode variar de acordo com o idioma ou a região.
+                <br><br>
+                <strong>ISO-8859-1:</strong> Também conhecido como Latin-1, é uma extensão do conjunto de caracteres ASCII que inclui caracteres acentuados utilizados em muitos idiomas europeus ocidentais.
+            </p>
+
+            <h3>6 - Explique como se pode usar símbolos e emojis em páginas web e dê exemplos.</h3>
+            <p>Para usar símbolos e emojis em páginas web, você pode usar entidades HTML ou diretamente os códigos Unicode. Por exemplo:</p>
+            <pre>
+                <code>
+&amp;hearts; <!-- Entidade HTML para um coração -->
+&#x1F60A; <!-- Código Unicode para um emoji sorridente -->
+
+<h1>Exemplo de Emoji de Coração</h1>
+<p>Aqui está um emoji de coração usando um código Unicode: &#x1F60D;</p>
+<p>&#x1F60D;</p>
+                </code>
+            </pre>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Sítio de Eventos</p>
+    </footer>
+</body>
+</html>

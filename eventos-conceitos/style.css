@@ -1,0 +1,225 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.destaque {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.destaque h2 {
+    color: #333;
+}
+
+.evento {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.evento-item {
+    margin-bottom: 20px;
+}
+
+.evento-item h3 {
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+
+}
+	
+.evento-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc; /* Linha de separação */
+    padding-bottom: 10px; /* Espaçamento entre os eventos */
+}
+
+.evento-item h3 {
+    color: #333;
+    margin-bottom: 5px; /* Espaçamento entre o título e as informações do evento */
+}
+
+.evento-item p {
+    color: #666;
+}
+
+.cpf-mask {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.cpf-mask:before {
+    content: "___.___.___-__";
+    color: #999;
+    position: absolute;
+    margin: 5px 0 0 5px;
+    pointer-events: none;
+}
+
+.cpf-mask:focus:before {
+    content: "";
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-item {
+    display: inline-block;
+    margin-right: 10px; /* Adicionei um espaçamento entre os campos */
+}
+
+.input-item label {
+    display: block; /* Coloca a label em uma nova linha para melhor alinhamento */
+}
+
+.destaque {
+    border: 2px solid blue; /* Adicione uma borda azul para destacar a seção */
+    padding: 10px; /* Adicione um espaçamento interno para a seção */
+}
+
+::selection {
+    color: red;
+    background: yellow;
+}
+
+.before-content {
+    font-weight: bold;
+    color: blue;
+    margin-right: 10px;
+}
+
+
+
+table {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #e2b3b3;
+}
+
+.formularios-container {
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.formularios-container form {
+    width: 48%; /* Adicionando uma largura para cada formulário */
+    margin-bottom: 15px;
+}
+
+#rua {
+    background-color: #fff; /* Cor de fundo padrão */
+    margin-bottom: 15px; /*Adiciona espaço (margem) na parte inferior do elemento.*/
+}
+
+/* Quando o campo está em foco, altera a cor de fundo */
+#rua:focus {
+    background-color: #9aceed; /* Nova cor de fundo quando em foco */
+}
+
+#numero {
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+
+#numero:focus {
+    background-color: #9aceed; 
+}
+
+#logradouro {
+    background-color: #fff;
+    margin-bottom: 15px; 
+}
+
+#logradouro:focus {
+    background-color: #9aceed; 
+}
+
+#bairro {
+    background-color: #fff;
+    margin-bottom: 15px; 
+}
+
+#bairro:focus {
+    background-color: #9aceed; 
+}
+
+#cep {
+    background-color: #fff;
+    margin-bottom: 15px; 
+}
+
+#cep:focus {
+    background-color: #9aceed; 
+}
+
+#cidade {
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+
+#cidade:focus {
+    background-color: #9aceed; 
+}
+
+#estado {
+    background-color: #fff;
+    margin-bottom: 15px; 
+}
+
+#estado:focus {
+    background-color: #9aceed; 
+}
